@@ -1,0 +1,701 @@
+﻿version: 2
+manifest: salesforce-skills-routing
+skills_root: "./skills/salesforce"
+generated_at: "2026-05-07 13.40.29"
+total_skills: 72
+routing_policy:
+  scoring:
+    exact_name_match: 5
+    alias_match: 3
+    category_match: 2
+    avoid_penalty: -4
+  tie_breakers:
+    - higher_exact_name_match_count
+    - higher_alias_overlap
+    - narrower_category_scope
+    - shortest_summary
+skills:
+  - name: "building-ui-bundle-app"
+    path: "./skills/salesforce/building-ui-bundle-app"
+    category: "ui"
+    summary: "MUST activate when the user wants to build, create, or generate a React application, React app, web application, single-page application (SPA), or frontend appl..."
+    aliases:
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "building-ui-bundle-frontend"
+    path: "./skills/salesforce/building-ui-bundle-frontend"
+    category: "ui"
+    summary: "MUST activate before editing ANY file under uiBundles/*/src/ for visual or UI changes to an EXISTING app - pages, components, sections, layout, styling, color..."
+    aliases:
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "creating-b2b-commerce-store"
+    path: "./skills/salesforce/creating-b2b-commerce-store"
+    category: "general"
+    summary: "Interactive workflow to create Commerce B2B Stores and retrieve storefront metadata. Use when users want to: create B2B Commerce stores, build Commerce storefro..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "deploying-ui-bundle"
+    path: "./skills/salesforce/deploying-ui-bundle"
+    category: "deployment"
+    summary: "MUST activate when the project contains a uiBundles/*/src/ directory or sfdx-project.json and the task involves deploying, pushing to an org, or post-deploy set..."
+    aliases:
+      - "deploy"
+      - "retrieve"
+      - "promote"
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "developing-agentforce"
+    path: "./skills/salesforce/developing-agentforce"
+    category: "agentforce"
+    summary: "Build, modify, debug, and deploy agents with Agentforce Agent Script. TRIGGER when: user creates, modifies, or asks about .agent files or aiAuthoringBundle meta..."
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "generating-apex"
+    path: "./skills/salesforce/generating-apex"
+    category: "apex"
+    summary: "Primary Apex authoring skill for class generation, refactoring, and review. ALWAYS ACTIVATE when the user mentions Apex, .cls, triggers, or asks to create/refac..."
+    aliases:
+      - "apex"
+      - ".cls"
+      - "trigger"
+    avoid:
+      - "none"
+  - name: "generating-apex-test"
+    path: "./skills/salesforce/generating-apex-test"
+    category: "apex"
+    summary: "Generate and validate Apex test classes with TestDataFactory patterns, bulk testing (251+ records), mocking strategies, assertion best practices, and discipline..."
+    aliases:
+      - "apex"
+      - ".cls"
+      - "trigger"
+    avoid:
+      - "none"
+  - name: "generating-custom-application"
+    path: "./skills/salesforce/generating-custom-application"
+    category: "metadata"
+    summary: "Use this skill when users need to create or configure Salesforce Custom Applications. Trigger when users mention custom apps, application metadata, app navigati..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "generating-custom-field"
+    path: "./skills/salesforce/generating-custom-field"
+    category: "metadata"
+    summary: "Use this skill when users need to create, generate, or validate Salesforce Custom Field metadata. Trigger when users mention custom fields, field types, Roll-up..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "generating-custom-lightning-type"
+    path: "./skills/salesforce/generating-custom-lightning-type"
+    category: "general"
+    summary: "Use this skill when users need to create Custom Lightning Types (CLTs) for Einstein Agent actions or structured input/output schemas. Trigger when users mention..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "generating-custom-object"
+    path: "./skills/salesforce/generating-custom-object"
+    category: "metadata"
+    summary: "Use this skill when users need to create, generate, or validate Salesforce Custom Object metadata. Trigger when users mention custom objects, creating objects, ..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "generating-custom-tab"
+    path: "./skills/salesforce/generating-custom-tab"
+    category: "metadata"
+    summary: "Use this skill when users need to create or configure Salesforce Custom Tabs. Trigger when users mention tabs, navigation tabs, object tabs, web tabs, Visualfor..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "generating-flexipage"
+    path: "./skills/salesforce/generating-flexipage"
+    category: "metadata"
+    summary: "Use this skill when users need to create, generate, modify, or validate Salesforce Lightning pages (FlexiPages). Trigger when users mention RecordPage, AppPage,..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "generating-flow"
+    path: "./skills/salesforce/generating-flow"
+    category: "flow"
+    summary: "Generate Salesforce Flows using the MCP tool execute_metadata_action. Use when the user asks to create, build, or generate a flow - including Screen, Autolaun..."
+    aliases:
+      - "flow"
+      - "record-triggered flow"
+      - "screen flow"
+      - ".flow-meta.xml"
+    avoid:
+      - "none"
+  - name: "generating-lightning-app"
+    path: "./skills/salesforce/generating-lightning-app"
+    category: "metadata"
+    summary: "Build complete Salesforce Lightning Experience applications from natural language descriptions. Use this skill when a user requests a \"complete app\", \"Lightning..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "generating-list-view"
+    path: "./skills/salesforce/generating-list-view"
+    category: "metadata"
+    summary: "Use this skill when users need to create, generate, or validate Salesforce List View metadata. Trigger when users mention list views, filtered record lists, cre..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "generating-permission-set"
+    path: "./skills/salesforce/generating-permission-set"
+    category: "metadata"
+    summary: "Generates correct, deployable Salesforce permission set metadata (PermissionSet XML) with object, field, user, and app permissions. Use this skill when creating..."
+    aliases:
+      - "permset"
+      - "permission set"
+      - "fls"
+    avoid:
+      - "none"
+  - name: "generating-ui-bundle-features"
+    path: "./skills/salesforce/generating-ui-bundle-features"
+    category: "ui"
+    summary: "MUST activate when the project contains a uiBundles/*/src/ directory and the user wants to add authentication or search to their app. Use this skill when adding..."
+    aliases:
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "generating-ui-bundle-metadata"
+    path: "./skills/salesforce/generating-ui-bundle-metadata"
+    category: "deployment"
+    summary: "MUST activate when the project contains a uiBundles/*/src/ directory and scaffolding a new UI bundle or app, or when editing ui-bundle.json, .uibundle-meta.xml,..."
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "generating-ui-bundle-site"
+    path: "./skills/salesforce/generating-ui-bundle-site"
+    category: "ui"
+    summary: "MUST activate when the project contains a uiBundles/*/src/ directory and the task involves creating or configuring site infrastructure. Use this skill when crea..."
+    aliases:
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "generating-validation-rule"
+    path: "./skills/salesforce/generating-validation-rule"
+    category: "metadata"
+    summary: "Use this skill when users need to create, modify, or validate Salesforce Validation Rules. Trigger when users mention validation rules, field validation, data q..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "implementing-ui-bundle-agentforce-conversation-client"
+    path: "./skills/salesforce/implementing-ui-bundle-agentforce-conversation-client"
+    category: "agentforce"
+    summary: "MUST activate when the project contains a uiBundles/*/src/ directory and the task involves adding or modifying a chat widget, chatbot, or conversational AI. Use..."
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "implementing-ui-bundle-file-upload"
+    path: "./skills/salesforce/implementing-ui-bundle-file-upload"
+    category: "ui"
+    summary: "MUST activate when the project contains a uiBundles/*/src/ directory and the task involves uploading, attaching, or dropping files. Use this skill when adding f..."
+    aliases:
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "observing-agentforce"
+    path: "./skills/salesforce/observing-agentforce"
+    category: "agentforce"
+    summary: "Analyze production Agentforce agent behavior using session traces and Data Cloud. TRIGGER when: user queries STDM session data or Data Cloud trace records; inve..."
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "salesforce-change-window-control"
+    path: "./skills/salesforce/salesforce-change-window-control"
+    category: "general"
+    summary: "Control Salesforce deployments inside strict enterprise change windows with pre-window readiness checks, execution runbook discipline, and post-window verificat..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "salesforce-compliance-audit-pack"
+    path: "./skills/salesforce/salesforce-compliance-audit-pack"
+    category: "general"
+    summary: "Build compliance-oriented evidence packs for Salesforce delivery, covering change traceability, approvals, testing evidence, deployment logs, and access control..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "salesforce-data-migration-orchestrator"
+    path: "./skills/salesforce/salesforce-data-migration-orchestrator"
+    category: "data"
+    summary: "Plan and execute Salesforce enterprise data migrations with mapping validation, staged loads, reconciliation, and cutover controls. Use for high-volume data mov..."
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "salesforce-incident-rollback"
+    path: "./skills/salesforce/salesforce-incident-rollback"
+    category: "general"
+    summary: "Incident-driven rollback and service restoration workflow for Salesforce releases, including impact triage, rollback selection, controlled execution, and recove..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "salesforce-multi-org-promotion"
+    path: "./skills/salesforce/salesforce-multi-org-promotion"
+    category: "general"
+    summary: "Orchestrate Salesforce change promotion across multiple orgs with consistency checks, delta validation, promotion sequencing, and environment parity control. Us..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "salesforce-release-governance"
+    path: "./skills/salesforce/salesforce-release-governance"
+    category: "general"
+    summary: "Enterprise Salesforce release governance workflow with explicit gates for scope control, risk scoring, test adequacy, deployment authorization, and evidence col..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "searching-media"
+    path: "./skills/salesforce/searching-media"
+    category: "general"
+    summary: "Searches for and retrieves existing visual media (images, logos, icons, photos, graphics, banners, thumbnails, hero images, backgrounds) from sources such as Sa..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-ai-agentforce"
+    path: "./skills/salesforce/sf-ai-agentforce"
+    category: "agentforce"
+    summary: ">"
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "sf-ai-agentforce-grid"
+    path: "./skills/salesforce/sf-ai-agentforce-grid"
+    category: "agentforce"
+    summary: "Use this skill whenever users want to build, inspect, debug, automate, or publish workflows in Agentforce Grid (AI Workbench) using Salesforce plus the Grid MCP..."
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "sf-ai-agentforce-observability"
+    path: "./skills/salesforce/sf-ai-agentforce-observability"
+    category: "agentforce"
+    summary: ">"
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "sf-ai-agentforce-persona"
+    path: "./skills/salesforce/sf-ai-agentforce-persona"
+    category: "agentforce"
+    summary: ">"
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "sf-ai-agentforce-testing"
+    path: "./skills/salesforce/sf-ai-agentforce-testing"
+    category: "agentforce"
+    summary: ">"
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "sf-ai-agentscript"
+    path: "./skills/salesforce/sf-ai-agentscript"
+    category: "agentforce"
+    summary: ">"
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "sf-apex"
+    path: "./skills/salesforce/sf-apex"
+    category: "apex"
+    summary: ">"
+    aliases:
+      - "apex"
+      - ".cls"
+      - "trigger"
+    avoid:
+      - "none"
+  - name: "sf-connected-apps"
+    path: "./skills/salesforce/sf-connected-apps"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-data"
+    path: "./skills/salesforce/sf-data"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-datacloud"
+    path: "./skills/salesforce/sf-datacloud"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-datacloud-act"
+    path: "./skills/salesforce/sf-datacloud-act"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-datacloud-connect"
+    path: "./skills/salesforce/sf-datacloud-connect"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-datacloud-harmonize"
+    path: "./skills/salesforce/sf-datacloud-harmonize"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-datacloud-prepare"
+    path: "./skills/salesforce/sf-datacloud-prepare"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-datacloud-retrieve"
+    path: "./skills/salesforce/sf-datacloud-retrieve"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-datacloud-segment"
+    path: "./skills/salesforce/sf-datacloud-segment"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-debug"
+    path: "./skills/salesforce/sf-debug"
+    category: "testing-observability"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-deploy"
+    path: "./skills/salesforce/sf-deploy"
+    category: "deployment"
+    summary: ">"
+    aliases:
+      - "deploy"
+      - "retrieve"
+      - "promote"
+    avoid:
+      - "none"
+  - name: "sf-diagram-mermaid"
+    path: "./skills/salesforce/sf-diagram-mermaid"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-diagram-nanobananapro"
+    path: "./skills/salesforce/sf-diagram-nanobananapro"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-docs"
+    path: "./skills/salesforce/sf-docs"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-flex-estimator"
+    path: "./skills/salesforce/sf-flex-estimator"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-flow"
+    path: "./skills/salesforce/sf-flow"
+    category: "flow"
+    summary: ">"
+    aliases:
+      - "flow"
+      - "record-triggered flow"
+      - "screen flow"
+      - ".flow-meta.xml"
+    avoid:
+      - "none"
+  - name: "sf-industry-cme-epc-model"
+    path: "./skills/salesforce/sf-industry-cme-epc-model"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-industry-commoncore-callable-apex"
+    path: "./skills/salesforce/sf-industry-commoncore-callable-apex"
+    category: "apex"
+    summary: ">"
+    aliases:
+      - "apex"
+      - ".cls"
+      - "trigger"
+    avoid:
+      - "none"
+  - name: "sf-industry-commoncore-datamapper"
+    path: "./skills/salesforce/sf-industry-commoncore-datamapper"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-industry-commoncore-flexcard"
+    path: "./skills/salesforce/sf-industry-commoncore-flexcard"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-industry-commoncore-integration-procedure"
+    path: "./skills/salesforce/sf-industry-commoncore-integration-procedure"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-industry-commoncore-omniscript"
+    path: "./skills/salesforce/sf-industry-commoncore-omniscript"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-industry-commoncore-omnistudio-analyze"
+    path: "./skills/salesforce/sf-industry-commoncore-omnistudio-analyze"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-integration"
+    path: "./skills/salesforce/sf-integration"
+    category: "general"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-lwc"
+    path: "./skills/salesforce/sf-lwc"
+    category: "ui"
+    summary: ">"
+    aliases:
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+  - name: "sf-metadata"
+    path: "./skills/salesforce/sf-metadata"
+    category: "deployment"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-permissions"
+    path: "./skills/salesforce/sf-permissions"
+    category: "metadata"
+    summary: ">"
+    aliases:
+      - "permset"
+      - "permission set"
+      - "fls"
+    avoid:
+      - "none"
+  - name: "sf-soql"
+    path: "./skills/salesforce/sf-soql"
+    category: "data"
+    summary: ">"
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+    avoid:
+      - "none"
+  - name: "sf-testing"
+    path: "./skills/salesforce/sf-testing"
+    category: "testing-observability"
+    summary: ">"
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "sf-vlocity-build-deploy"
+    path: "./skills/salesforce/sf-vlocity-build-deploy"
+    category: "deployment"
+    summary: ">"
+    aliases:
+      - "deploy"
+      - "retrieve"
+      - "promote"
+    avoid:
+      - "none"
+  - name: "switching-org"
+    path: "./skills/salesforce/switching-org"
+    category: "deployment"
+    summary: "Switches the active Salesforce org (default target-org) using the Salesforce CLI. Use whenever someone wants to change which org CLI commands run against - wh..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "testing-agentforce"
+    path: "./skills/salesforce/testing-agentforce"
+    category: "agentforce"
+    summary: "Write, run, and analyze structured test suites for Agentforce agents. TRIGGER when: user writes or modifies test spec YAML (AiEvaluationDefinition); runs sf age..."
+    aliases:
+      - "agentforce"
+      - "agentscript"
+      - ".agent"
+      - "aiauthoringbundle"
+    avoid:
+      - "none"
+  - name: "uplifting-components-to-slds2"
+    path: "./skills/salesforce/uplifting-components-to-slds2"
+    category: "general"
+    summary: "Migrate Lightning Web Components from SLDS 1 to SLDS 2 by running the SLDS linter and fixing violations. Use this skill whenever users mention SLDS 2, SLDS upli..."
+    aliases:
+      - "salesforce"
+    avoid:
+      - "none"
+  - name: "using-ui-bundle-salesforce-data"
+    path: "./skills/salesforce/using-ui-bundle-salesforce-data"
+    category: "ui"
+    summary: "MUST activate when the project contains a uiBundles/*/src/ directory and the task involves ANY Salesforce record operation - reading, creating, updating, or d..."
+    aliases:
+      - "soql"
+      - "data load"
+      - "bulk api"
+      - "lwc"
+      - "ui bundle"
+      - "frontend"
+    avoid:
+      - "none"
+
+

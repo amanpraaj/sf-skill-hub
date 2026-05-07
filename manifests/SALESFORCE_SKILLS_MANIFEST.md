@@ -1,0 +1,82 @@
+﻿# Salesforce Skills Manifest
+
+Machine-first routing manifest is now in `SALESFORCE_SKILLS_MANIFEST.yaml`.
+
+## Root
+- `./skills/salesforce`
+- total_skills: `72`
+
+## Quick Routing Map
+- `building-ui-bundle-app` -> `./skills/salesforce/building-ui-bundle-app`
+- `building-ui-bundle-frontend` -> `./skills/salesforce/building-ui-bundle-frontend`
+- `creating-b2b-commerce-store` -> `./skills/salesforce/creating-b2b-commerce-store`
+- `deploying-ui-bundle` -> `./skills/salesforce/deploying-ui-bundle`
+- `developing-agentforce` -> `./skills/salesforce/developing-agentforce`
+- `generating-apex` -> `./skills/salesforce/generating-apex`
+- `generating-apex-test` -> `./skills/salesforce/generating-apex-test`
+- `generating-custom-application` -> `./skills/salesforce/generating-custom-application`
+- `generating-custom-field` -> `./skills/salesforce/generating-custom-field`
+- `generating-custom-lightning-type` -> `./skills/salesforce/generating-custom-lightning-type`
+- `generating-custom-object` -> `./skills/salesforce/generating-custom-object`
+- `generating-custom-tab` -> `./skills/salesforce/generating-custom-tab`
+- `generating-flexipage` -> `./skills/salesforce/generating-flexipage`
+- `generating-flow` -> `./skills/salesforce/generating-flow`
+- `generating-lightning-app` -> `./skills/salesforce/generating-lightning-app`
+- `generating-list-view` -> `./skills/salesforce/generating-list-view`
+- `generating-permission-set` -> `./skills/salesforce/generating-permission-set`
+- `generating-ui-bundle-features` -> `./skills/salesforce/generating-ui-bundle-features`
+- `generating-ui-bundle-metadata` -> `./skills/salesforce/generating-ui-bundle-metadata`
+- `generating-ui-bundle-site` -> `./skills/salesforce/generating-ui-bundle-site`
+- `generating-validation-rule` -> `./skills/salesforce/generating-validation-rule`
+- `implementing-ui-bundle-agentforce-conversation-client` -> `./skills/salesforce/implementing-ui-bundle-agentforce-conversation-client`
+- `implementing-ui-bundle-file-upload` -> `./skills/salesforce/implementing-ui-bundle-file-upload`
+- `observing-agentforce` -> `./skills/salesforce/observing-agentforce`
+- `salesforce-change-window-control` -> `./skills/salesforce/salesforce-change-window-control`
+- `salesforce-compliance-audit-pack` -> `./skills/salesforce/salesforce-compliance-audit-pack`
+- `salesforce-data-migration-orchestrator` -> `./skills/salesforce/salesforce-data-migration-orchestrator`
+- `salesforce-incident-rollback` -> `./skills/salesforce/salesforce-incident-rollback`
+- `salesforce-multi-org-promotion` -> `./skills/salesforce/salesforce-multi-org-promotion`
+- `salesforce-release-governance` -> `./skills/salesforce/salesforce-release-governance`
+- `searching-media` -> `./skills/salesforce/searching-media`
+- `sf-ai-agentforce` -> `./skills/salesforce/sf-ai-agentforce`
+- `sf-ai-agentforce-grid` -> `./skills/salesforce/sf-ai-agentforce-grid`
+- `sf-ai-agentforce-observability` -> `./skills/salesforce/sf-ai-agentforce-observability`
+- `sf-ai-agentforce-persona` -> `./skills/salesforce/sf-ai-agentforce-persona`
+- `sf-ai-agentforce-testing` -> `./skills/salesforce/sf-ai-agentforce-testing`
+- `sf-ai-agentscript` -> `./skills/salesforce/sf-ai-agentscript`
+- `sf-apex` -> `./skills/salesforce/sf-apex`
+- `sf-connected-apps` -> `./skills/salesforce/sf-connected-apps`
+- `sf-data` -> `./skills/salesforce/sf-data`
+- `sf-datacloud` -> `./skills/salesforce/sf-datacloud`
+- `sf-datacloud-act` -> `./skills/salesforce/sf-datacloud-act`
+- `sf-datacloud-connect` -> `./skills/salesforce/sf-datacloud-connect`
+- `sf-datacloud-harmonize` -> `./skills/salesforce/sf-datacloud-harmonize`
+- `sf-datacloud-prepare` -> `./skills/salesforce/sf-datacloud-prepare`
+- `sf-datacloud-retrieve` -> `./skills/salesforce/sf-datacloud-retrieve`
+- `sf-datacloud-segment` -> `./skills/salesforce/sf-datacloud-segment`
+- `sf-debug` -> `./skills/salesforce/sf-debug`
+- `sf-deploy` -> `./skills/salesforce/sf-deploy`
+- `sf-diagram-mermaid` -> `./skills/salesforce/sf-diagram-mermaid`
+- `sf-diagram-nanobananapro` -> `./skills/salesforce/sf-diagram-nanobananapro`
+- `sf-docs` -> `./skills/salesforce/sf-docs`
+- `sf-flex-estimator` -> `./skills/salesforce/sf-flex-estimator`
+- `sf-flow` -> `./skills/salesforce/sf-flow`
+- `sf-industry-cme-epc-model` -> `./skills/salesforce/sf-industry-cme-epc-model`
+- `sf-industry-commoncore-callable-apex` -> `./skills/salesforce/sf-industry-commoncore-callable-apex`
+- `sf-industry-commoncore-datamapper` -> `./skills/salesforce/sf-industry-commoncore-datamapper`
+- `sf-industry-commoncore-flexcard` -> `./skills/salesforce/sf-industry-commoncore-flexcard`
+- `sf-industry-commoncore-integration-procedure` -> `./skills/salesforce/sf-industry-commoncore-integration-procedure`
+- `sf-industry-commoncore-omniscript` -> `./skills/salesforce/sf-industry-commoncore-omniscript`
+- `sf-industry-commoncore-omnistudio-analyze` -> `./skills/salesforce/sf-industry-commoncore-omnistudio-analyze`
+- `sf-integration` -> `./skills/salesforce/sf-integration`
+- `sf-lwc` -> `./skills/salesforce/sf-lwc`
+- `sf-metadata` -> `./skills/salesforce/sf-metadata`
+- `sf-permissions` -> `./skills/salesforce/sf-permissions`
+- `sf-soql` -> `./skills/salesforce/sf-soql`
+- `sf-testing` -> `./skills/salesforce/sf-testing`
+- `sf-vlocity-build-deploy` -> `./skills/salesforce/sf-vlocity-build-deploy`
+- `switching-org` -> `./skills/salesforce/switching-org`
+- `testing-agentforce` -> `./skills/salesforce/testing-agentforce`
+- `uplifting-components-to-slds2` -> `./skills/salesforce/uplifting-components-to-slds2`
+- `using-ui-bundle-salesforce-data` -> `./skills/salesforce/using-ui-bundle-salesforce-data`
+
